@@ -4,14 +4,12 @@
 
 ## Installation Step:
 - Download [Postgre SQL](postgresql.org/download/) and Install.
-
+- Create Database "ist"
 - Clone the project
-
 - Compiles
 ```
 ./mvnw clean install
 ```
-
 - Run executable Java program 
 ```
 java -jar target/agil_syofian_hidayat-0.0.1-SNAPSHOT.jar
