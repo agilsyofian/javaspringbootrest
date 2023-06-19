@@ -31,7 +31,7 @@ public class UsersService {
   public Users addNewUsers(Users users) {
 
     if (users.getUsername() == null || users.getUsername().length() == 0 || users.getPassword() == null || users.getPassword().length() == 0) {
-     throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Username dan / atau password koson");
+     throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Username dan / atau password kosong");
     }
 
     Optional<Users> usersOpt = usersRepository.findUsersByUsername(users.getUsername());

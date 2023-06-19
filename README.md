@@ -3,7 +3,7 @@
 ### Requirement: Java 11, [Postgre SQL](https://www.postgresql.org/)
 
 ## Installation Step:
-- Download [Postgre SQL](postgresql.org/download/) and Install.
+- Download [Postgre SQL](https://www.postgresql.org/download/) and Install.
 - Create Database "ist"
 - Clone the project
 - Compiles
@@ -26,14 +26,23 @@ docker compose up -d
 docker compose logs
 ```
 
-## Api Doc 
-Check api documentation from [here](https://documenter.getpostman.com/view/21416970/2s93si1Vgb)
+# API Documentation and Testing
 
-## Testing API with [Postman](https://www.postman.com) 
+## [Swagger](https://swagger.io/)
+
+Check documentation and testing API
+```
+http://localhost:8080/swagger-ui/index.html
+```
+
+
+## [Postman](https://www.postman.com)
+
+Check api documentation from [here](https://documenter.getpostman.com/view/21416970/2s93si1Vgb) and
+testing with postman.
 
 Steps:
 
 - Download and install Postman
 - Import postman_collection.json
-
 

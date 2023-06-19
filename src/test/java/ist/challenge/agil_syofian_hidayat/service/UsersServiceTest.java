@@ -51,6 +51,21 @@ public class UsersServiceTest {
   }
 
   @Test
+  void testCannotAddNewUsersEmptyUsernameOrPassword() {
+    String username = "";
+    String password = "";
+
+    Users newUser = new Users(
+            username,
+            password
+    );
+
+    ResponseStatusException thrown = assertThrows(ResponseStatusException.class, () -> testingUsersService.addNewUsers(newUser));
+    assertEquals(thrown.getStatus(), HttpStatus.BAD_REQUEST);
+    assertTrue(Objects.requireNonNull(thrown.getMessage()).contains("Username dan / atau password kosong"));
+  }
+
+  @Test
   void testCannotAddNewUsersWithSameUsername() {
     String username = "john";
     String password = "123456abc";

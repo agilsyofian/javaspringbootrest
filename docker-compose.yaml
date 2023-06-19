@@ -1,15 +1,15 @@
 version: "3.8"
 services:
 
-  spring:
-    build:
-      context: .
-    container_name: spring
-    depends_on:
-      postgres:
-        condition: service_healthy
-    ports:
-      - 8080:8080
+#  spring:
+#    build:
+#      context: .
+#    container_name: spring
+#    depends_on:
+#      postgres:
+#        condition: service_healthy
+#    ports:
+#      - 8080:8080
 
   postgres:
     container_name: postgres
