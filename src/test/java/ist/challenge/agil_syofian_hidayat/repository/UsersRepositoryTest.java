@@ -10,7 +10,6 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 import ist.challenge.agil_syofian_hidayat.model.Users;
 
-@SpringBootTest
 public class UsersRepositoryTest {
 
   @Autowired
