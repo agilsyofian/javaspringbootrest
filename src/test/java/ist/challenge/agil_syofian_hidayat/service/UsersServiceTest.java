@@ -23,6 +23,7 @@ import java.util.Optional;
 public class UsersServiceTest {
 
   @Mock private UsersRepository usersRepository;
+  
   private UsersService testingUsersService;
 
   @BeforeEach
