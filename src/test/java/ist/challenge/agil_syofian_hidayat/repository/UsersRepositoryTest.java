@@ -15,7 +15,6 @@ public class UsersRepositoryTest {
   @Autowired
   public UsersRepository testingUsersRepository;
 
-
   @Test
   public final void testFindUsersByUsername() {
 
